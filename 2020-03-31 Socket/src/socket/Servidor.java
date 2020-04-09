@@ -5,6 +5,10 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author fco-felix
+ *
+ */
 public class Servidor implements Observador {
 	private ServerSocket servidor;
 	private Socket conexao;
@@ -56,15 +60,15 @@ public class Servidor implements Observador {
 		listaConexoes.remove(conexao);
 	}
 
-	private void fecharServidor() {
-		// TODO definir na interface gráfica ação para botão
-		try {
-			servidor.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		msgAlerta.mensagem("Servidor FINALIZADO");
-	}
+//	private void fecharServidor() {
+//		// TODO definir na interface gráfica ação para botão
+//		try {
+//			servidor.close();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		msgAlerta.mensagem("Servidor FINALIZADO");
+//	}
 
 	public static void main(String[] args) {
 		Integer porta = 8000;
